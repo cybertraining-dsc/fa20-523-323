@@ -27,3 +27,4 @@ changing in the way our cities are managed. However, this does not come without 
 https://en.wikipedia.org/wiki/Smart_city. [Accessed: 12-Sep-2020].
 [^second]:  Array of Things. [Online]. Available: https://arrayofthings.github.io/index.html.
 [Accessed: 12-Sep-2020].
+ 
