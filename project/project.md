@@ -1,5 +1,7 @@
 # Predicting Hotel Prices Using Linear Regression
 
+- [ ] abstracts can not have citations
+
 Anthony Tugman, [fa20-523-323](https://github.com/cybertraining-dsc/fa20-523-323/), [Edit](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/project.md)
 
 {{% pageinfo %}}
