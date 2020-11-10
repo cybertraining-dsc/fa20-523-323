@@ -1,5 +1,7 @@
 # Predicting Hotel Reservation Cancellation Rates
 
+[![Check Report](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions)
+
 Anthony Tugman, [fa20-523-323](https://github.com/cybertraining-dsc/fa20-523-323/), [Edit](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/project.md)
 
 {{% pageinfo %}}
