@@ -31,6 +31,7 @@ Room reservation completion rates are an important consideration for revenue man
 To differentiate from and improve on the attempts previously mentioned, the algorithm produced as a result of the current effort will not predict the cancellation rate over general stipulations, but rather for a specific customer.  Additionally, a special focus will be on proving that the created algorithm is statistically significant and can accurately be extrapolated to larger subsets of the data.  Finally, for initial training and testing, larger subsets of the datasets will be utilized due to the increased processing power available from Google Colab.  It is important to note that the first-mentioned previous work [^2] appears to use a dataset proprietary to the study while the second-mentioned work [^3] appears to utilize the same dataset that this study will as well.  
 
 ## 3. DataSets
+
 Locating a dataset appropriate for this task proved to be challenging.  Privacy concerns and the desire to keep internal corporate information confidential adds difficulty in locating the necessary data.  Ultimately, the following data repository was selected to train and test the reservation cancellation, prediction model:
 
 1. [Hotel Booking Demand](https://www.kaggle.com/jessemostipak/hotel-booking-demand) [^4]
@@ -83,18 +84,21 @@ The dataset is imported directly from Kaggle into Python for analysis.  This ana
 *  Results Evaluation
 *  User Input
 ## 4. Technologies Used
+
 * Python
 * Google Collab
 * Pandas
 * Scikit-learn  
 ## 5. Progress This Week  
+
 * Updated Abstract
 * Updated Title
 * Updated Keywords
 * Updated Introduction
 * Updated Background Research and Previous Work
 * Updated DataSets
-* Updated README.yaml
+* Updated README.yaml  
+## 6. Conclusion
 
 
 
@@ -106,8 +110,9 @@ The dataset is imported directly from Kaggle into Python for analysis.  This ana
 
 
 ## 6. References
-[^1]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/. [Accessed: 08- Nov- 2020].
-[^2]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue. [Accessed: 08- Nov- 2020].
-[^3]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794. [Accessed: 08- Nov- 2020].
-[^4]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: https://www.kaggle.com/jessemostipak/hotel-booking-demand. [Accessed: 08- Nov- 2020].
-[^5]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average. [Accessed: 08- Nov- 2020].
+
+[^1]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: <https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/>. [Accessed: 08- Nov- 2020].
+[^2]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: <https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue>. [Accessed: 08- Nov- 2020].
+[^3]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794>. [Accessed: 08- Nov- 2020].
+[^4]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: <https://www.kaggle.com/jessemostipak/hotel-booking-demand>. [Accessed: 08- Nov- 2020].
+[^5]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: <https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average>. [Accessed: 08- Nov- 2020].
