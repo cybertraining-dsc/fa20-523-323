@@ -1,5 +1,7 @@
 # Predicting Hotel Reservation Cancellation Rates
 
+- [ ] Please fix the reference section. It is not properly organized. One line should only have a single reference. 
+
 Anthony Tugman, [fa20-523-323](https://github.com/cybertraining-dsc/fa20-523-323/), [Edit](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/project.md)
 
 {{% pageinfo %}}
