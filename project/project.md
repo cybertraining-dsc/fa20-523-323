@@ -108,7 +108,7 @@ After preprocessing the data:
 * shape:  (84938, 25)
 * duplicate entries:  0
 
-![Data Snapshot](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/images/figure1.png)  
+![Data Snapshot](https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure1.png)  
 **Figure 1:** Snapshot of Data Set after Preprocessing 
 
 ## 5. Model Creation
