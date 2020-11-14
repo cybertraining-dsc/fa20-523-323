@@ -126,24 +126,24 @@ To form the predictive model a Random Forest Classifier will be used.  With the 
 The train/test ratio of 60/40 had the best initial accuracy of 79.56% so this ratio will be used in the creation of the final model.  For the initial test, all remaining features will be used to train the reservation cancellation outcome.  To determine the accuracy of the resulting model, the number of predicted cancellations is compared to the number of actual cancellations.  As the model stands, the accuracy is at 79.56%.  
 This model relies on 23 features for the prediction.  With this many features it is possible that some features have no effect on the cancellation outcome. It is also possible that some features are so closely related that calculating each individually hinders performance while having little effect on outcome.  To evaluate the importance of features, Pearson's correlation coefficent can be used.  Correlation coefficients are used in statistics to measure how strong the relationship is between two variables.  The calculation formula returns a value between -1 and 1 where a value of 1 indicates a strong positive relationship, -1 indicates a strong negative relationship, and 0 indicates that there is no relationship at all [^9].  Figure 2 shows the correlation between the remaining features.  
 
-![Initial Model Correlation](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/images/figure2.png)  
+![Initial Model Correlation](https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure2.png)  
 **Figure 2:** Pearson's Correlation Graph of Remaining Features  
   
 In Figure 2 it is straightforward to identify the correlation between the target variable 'is_canceled' and the remaining features.  It does not appear than any variable has a strong positive or negative correlation, returning a value close to positive or negative 1.  There does however appear to be a dominant correlation between 'is_canceled' and three features: 'lead_time', 'adr', and 'room_correct'.  The train/test ratio is again 60/40 and the baseline accuracy of the model is 79.56%.  The remaining features 'lead_time', 'adr', and 'room_correct' are used to develop the new model.  Accuracy is again determined by comparing the number of predicted cancellations to the number of actual cancellations.  The updated model has an accuracy of 85.18%.  Figure 3 shows the correlation between the remaining features.  It is important to note that the relationship between the remaining features and target value does not appear to be strong, however there is a correlation nonetheless.  
 
-![Updated Model Correlation](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/images/figure3.png)  
+![Updated Model Correlation](https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure3.png)  
 **Figure 3:** Pearson's Correlation Graph of Updated Remaining Features  
 
 As a final visualization, Figure 4 shows a comparison between the predicted and actual cancellation instances.  The graph reveals an interesting pattern, the model is over predicting early in the data set and under predicting as it proceeds through the data set. Further inspection and manipulation of the Random Forest parameters were unable to eliminate this pattern.  
 
-![Results Predicted vs. Actual](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/images/figure4.png)  
+![Results Predicted vs. Actual](https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure4.png)  
 **Figure 4:** Model Results Predicted vs. Actual  
 
 ## 6. Benchmark  
 
 A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned.  
 
-![Benchmark Results](https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/images/figure5.png)  
+![Benchmark Results](https://github.com/cybertraining-dsc/fa20-523-323/raw/master/project/images/figure5.png)  
 **Figure 5:** Cloudmesh Benchmark Results  
 
 ## 7. Conclusion
@@ -151,12 +151,13 @@ A benchmark was ran within the Google Colab notebook to measure performance.  In
 From the results of the updated predictive model, it is apparent that the lodging industry should invest focus into the Big Data they keep on their customers.  As each hotel chain is unique, it would be necessary for each to develop their own predictive model however it has been demonstrated that such a model would be effective in reducing the number of rooms going unoccupied from reservation cancellation.  As the model is predicting at 85% accuracy, this is a 35% increase in the amount of reservation cancellations that can be accounted for over the current predictive techniques.  To prevent further damage from reservation cancellations the hotel would have theoretically been able to overbook room reservations by 35% or less as they anticipated cancellations.
 
 ## 8. References
-[^1]: "Big Data - Definition, Importance, Examples & Tools", RDA, 2020. [Online]. Available: https://www.rd-alliance.org/group/big-data-ig-data-development-ig/wiki/big-data-definition-importance-examples-tools#:~:text=Big%20data%20is%20a%20term,day%2Dto%2Dday%20basis.&text=It's%20what%20organizations%20do%20with,decisions%20and%20strategic%20business%20moves. [Accessed: 12- Nov- 2020].
-[^2]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/. [Accessed: 08- Nov- 2020].
-[^3]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue. [Accessed: 08- Nov- 2020].
-[^4]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794. [Accessed: 08- Nov- 2020].
-[^5]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: https://www.kaggle.com/jessemostipak/hotel-booking-demand. [Accessed: 08- Nov- 2020].
-[^6]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average. [Accessed: 08- Nov- 2020].
-[^7]: https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb
-[^8]: "An Implementation and Explanation of the Random Forest in Python", Medium, 2020. [Online]. Available: https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76. [Accessed: 12- Nov- 2020].
-[^9]: "Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps", Statistics How To, 2020. [Online]. Available: https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/. [Accessed: 12- Nov- 2020].
+
+[^1]: "Big Data - Definition, Importance, Examples & Tools", RDA, 2020. [Online]. Available: <https://www.rd-alliance.org/group/big-data-ig-data-development-ig/wiki/big-data-definition-importance-examples-tools#:~:text=Big%20data%20is%20a%20term,day%2Dto%2Dday%20basis.&text=It's%20what%20organizations%20do%20with,decisions%20and%20strategic%20business%20moves>. [Accessed: 12- Nov- 2020].
+[^2]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: <https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/>. [Accessed: 08- Nov- 2020].
+[^3]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: <https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue>. [Accessed: 08- Nov- 2020].
+[^4]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794>. [Accessed: 08- Nov- 2020].
+[^5]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: <https://www.kaggle.com/jessemostipak/hotel-booking-demand>. [Accessed: 08- Nov- 2020].
+[^6]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: <https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average>. [Accessed: 08- Nov- 2020].
+[^7]: <https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb>
+[^8]: "An Implementation and Explanation of the Random Forest in Python", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76>. [Accessed: 12- Nov- 2020].
+[^9]: "Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps", Statistics How To, 2020. [Online]. Available: <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>. [Accessed: 12- Nov- 2020].
