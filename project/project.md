@@ -116,6 +116,7 @@ After preprocessing the data:
 ## 5. Model Creation
 
 To form the predictive model a Random Forest Classifier will be used.  With the use of the sklearn package, the Random Forest Classifier is simple to implement.  The Random Forest Classifier is based on the concept of a decision tree.  A decision tree is a series of yes/no question asked about the data which eventually leads to a predicted class or value [^8].  To start the creation of the model, the data must first be split into a training and testing set.  Typically, this is a ratio that must be adjusted to determine which will result in the higher accuracy.  Here are the accuracy outcomes for various ratios:  
+
 | Train/Test Ratio | Accuracy |
 |:----------------:|:--------:|
 |       80/20      |  77.64%  |
@@ -125,6 +126,7 @@ To form the predictive model a Random Forest Classifier will be used.  With the 
 |       40/60      |  75.73%  |
 |       30/70      |  74.71%  |
 |       20/80      |  73.13%  |  
+
 The train/test ratio of 60/40 had the best initial accuracy of 79.56% so this ratio will be used in the creation of the final model.  For the initial test, all remaining features will be used to train the reservation cancellation outcome.  To determine the accuracy of the resulting model, the number of predicted cancellations is compared to the number of actual cancellations.  As the model stands, the accuracy is at 79.56%.  
 This model relies on 23 features for the prediction.  With this many features it is possible that some features have no effect on the cancellation outcome. It is also possible that some features are so closely related that calculating each individually hinders performance while having little effect on outcome.  To evaluate the importance of features, Pearson's correlation coefficent can be used.  Correlation coefficients are used in statistics to measure how strong the relationship is between two variables.  The calculation formula returns a value between -1 and 1 where a value of 1 indicates a strong positive relationship, -1 indicates a strong negative relationship, and 0 indicates that there is no relationship at all [^9].  Figure 2 shows the correlation between the remaining features.  
 
@@ -154,12 +156,12 @@ From the results of the updated predictive model, it is apparent that the lodgin
 
 ## 8. References
 
-[^1]: "Big Data - Definition, Importance, Examples & Tools", RDA, 2020. [Online]. Available: <https://www.rd-alliance.org/group/big-data-ig-data-development-ig/wiki/big-data-definition-importance-examples-tools#:~:text=Big%20data%20is%20a%20term,day%2Dto%2Dday%20basis.&text=It's%20what%20organizations%20do%20with,decisions%20and%20strategic%20business%20moves>. [Accessed: 12- Nov- 2020].
-[^2]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: <https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/>. [Accessed: 08- Nov- 2020].
-[^3]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: <https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue>. [Accessed: 08- Nov- 2020].
-[^4]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794>. [Accessed: 08- Nov- 2020].
-[^5]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: <https://www.kaggle.com/jessemostipak/hotel-booking-demand>. [Accessed: 08- Nov- 2020].
-[^6]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: <https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average>. [Accessed: 08- Nov- 2020].
-[^7]: <https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb>
-[^8]: "An Implementation and Explanation of the Random Forest in Python", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76>. [Accessed: 12- Nov- 2020].
+[^1]: "Big Data - Definition, Importance, Examples & Tools", RDA, 2020. [Online]. Available: <https://www.rd-alliance.org/group/big-data-ig-data-development-ig/wiki/big-data-definition-importance-examples-tools#:~:text=Big%20data%20is%20a%20term,day%2Dto%2Dday%20basis.&text=It's%20what%20organizations%20do%20with,decisions%20and%20strategic%20business%20moves>. [Accessed: 12- Nov- 2020].  
+[^2]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: <https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/>. [Accessed: 08- Nov- 2020].  
+[^3]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: <https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue>. [Accessed: 08- Nov- 2020.  
+[^4]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794>. [Accessed: 08- Nov- 2020].  
+[^5]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: <https://www.kaggle.com/jessemostipak/hotel-booking-demand>. [Accessed: 08- Nov- 2020].  
+[^6]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: <https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average>. [Accessed: 08- Nov- 2020].  
+[^7]: <https://github.com/cybertraining-dsc/fa20-523-323/blob/master/project/colabnotebook/DataAnalysis.ipynb>.  
+[^8]: "An Implementation and Explanation of the Random Forest in Python", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76>. [Accessed: 12- Nov- 2020].  
 [^9]: "Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps", Statistics How To, 2020. [Online]. Available: <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>. [Accessed: 12- Nov- 2020].
