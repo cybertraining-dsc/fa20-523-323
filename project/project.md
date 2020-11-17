@@ -158,11 +158,19 @@ From the results of the updated predictive model, it is apparent that the lodgin
 ## 8. References
 
 [^1]: "Big Data - Definition, Importance, Examples & Tools", RDA, 2020. [Online]. Available: <https://www.rd-alliance.org/group/big-data-ig-data-development-ig/wiki/big-data-definition-importance-examples-tools#:~:text=Big%20data%20is%20a%20term,day%2Dto%2Dday%20basis.&text=It's%20what%20organizations%20do%20with,decisions%20and%20strategic%20business%20moves>. [Accessed: 12- Nov- 2020].
+
 [^2]: "Predicting Hotel Booking Cancellations Using Machine Learning - Step by Step Guide with Real Data and Python", Linkedin.com, 2020. [Online]. Available: <https://www.linkedin.com/pulse/u-hotel-booking-cancellations-using-machine-learning-manuel-banza/>. [Accessed: 08- Nov- 2020].
+
 [^3]: "(PDF) Predicting Hotel Booking Cancellation to Decrease Uncertainty and Increase Revenue", ResearchGate, 2020. [Online]. Available: <https://www.researchgate.net/publication/310504011_Predicting_Hotel_Booking_Cancellation_to_Decrease_Uncertainty_and_Increase_Revenue>. [Accessed: 08- Nov- 2020.
+
 [^4]: "Predicting Hotel Cancellations with Machine Learning", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/predicting-hotel-cancellations-with-machine-learning-fa669f93e794>. [Accessed: 08- Nov- 2020].
+
 [^5]: "Hotel booking demand", Kaggle.com, 2020. [Online]. Available: <https://www.kaggle.com/jessemostipak/hotel-booking-demand>. [Accessed: 08- Nov- 2020].
+
 [^6]: "Global Cancellation Rate of Hotel Reservations Reaches 40% on Average", Hospitality Technology, 2020. [Online]. Available: <https://hospitalitytech.com/global-cancellation-rate-hotel-reservations-reaches-40-average>. [Accessed: 08- Nov- 2020].
+
 [^7]: <https://github.com/cybertraining-dsc/fa20-523-323/blob/main/project/colabnotebook/DataAnalysis.ipynb>.
+
 [^8]: "An Implementation and Explanation of the Random Forest in Python", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76>. [Accessed: 12- Nov- 2020].
+
 [^9]: "Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps", Statistics How To, 2020. [Online]. Available: <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>. [Accessed: 12- Nov- 2020].
