@@ -1,7 +1,7 @@
 # Predicting Hotel Reservation Cancellation Rates
 
-- [ ] Please fix the reference section. It is not properly organized. One line should only have a single reference. 
-- [ ] Does not follow template
+- [x] gregor fixed this for you: Please fix the reference section. It is not properly organized. One line should only have a single reference.
+- [ ] Does not follow template. please add the tags
 
 Anthony Tugman, [fa20-523-323](https://github.com/cybertraining-dsc/fa20-523-323/), [Edit](https://github.com/cybertraining-dsc/fa20-523-323/blob/main/project/project.md)
 
