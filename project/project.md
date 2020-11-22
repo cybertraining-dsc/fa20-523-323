@@ -156,7 +156,7 @@ As a final visualization, Figure 4 shows a comparison between the predicted and 
 
 ## 6. Benchmark
 
-A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned.
+A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned. Cloudmesh Comon [^cloudmesh-benchmark] was used to create the benchmark.
 
 ![Benchmark Results](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png)
 
@@ -185,3 +185,6 @@ From the results of the updated predictive model, it is apparent that the lodgin
 [^8]: "An Implementation and Explanation of the Random Forest in Python", Medium, 2020. [Online]. Available: <https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76>. [Accessed: 12- Nov- 2020].
 
 [^9]: "Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps", Statistics How To, 2020. [Online]. Available: <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>. [Accessed: 12- Nov- 2020].
+
+[^cloudmesh-benchmark]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, https://github.com/cloudmesh/cloudmesh-common
+
