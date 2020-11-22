@@ -193,5 +193,5 @@ From the results of the updated predictive model, it is apparent that the lodgin
 
 [^9]: "Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps", Statistics How To, 2020. [Online]. Available: <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>. [Accessed: 12- Nov- 2020].
 
-[^cloudmesh-benchmark]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, https://github.com/cloudmesh/cloudmesh-common
+[^cloudmesh-benchmark]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 
