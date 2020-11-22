@@ -1,5 +1,7 @@
 # Predicting Hotel Reservation Cancellation Rates
 
+- [ ] you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb
+
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions) 
 [![Status](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions)
 Status: final
