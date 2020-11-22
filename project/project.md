@@ -1,6 +1,5 @@
 # Predicting Hotel Reservation Cancellation Rates
 
-- [ ] you are using benchmark wrong as explained in the ipynb example provided for the class and the video. IF you do not have functions, you need to use StopWatch named timers as demonstrated in the sample ipynb
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions) 
 [![Status](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions)
@@ -156,8 +155,16 @@ As a final visualization, Figure 4 shows a comparison between the predicted and 
 
 ## 6. Benchmark
 
-A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned. Cloudmesh Comon [^cloudmesh-benchmark] was used to create the benchmark.
-
+To measure program performance in the Google Colab notebook, Cloudmesh Common [^cloudmesh-benchmark] was used to create a benchmark.  In this instance, performance was measured for overall code execution, data loading, preparation of the data, the creation of model one, and the creation of model two.  The most important increase in performance was between the creation of models one and two.  With 23 features, model one took 8.161 seconds to train while model 2, with 3 features, took 7.01 seconds to train.  By reducing the number of features between the two models there is a 5.62% increase in accuracy and a 14.10% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned.  Additionally, the table provides an analysis of computation time:
+| Train/Test Ratio | Accuracy |
+|:----------------:|:--------:|
+|       80/20      |  77.64%  |
+|       70/30      |  77.66%  |
+|       60/40      |  79.56%  |
+|       50/50      |  77.92%  |
+|       40/60      |  75.73%  |
+|       30/70      |  74.71%  |
+|       20/80      |  73.13%  |
 ![Benchmark Results](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png)
 
 **Figure 5:** Cloudmesh Benchmark Results
