@@ -78,6 +78,7 @@ The Hotel Booking Demand data set contains approximately 120,000 unique entries 
 ## 4. Data Preprocessing
 
 The raw data set [^5] is imported directly from Kaggle into a Google Colab notebook [^7].  Data manipulation is handled using Pandas.  Pandas was specifically written for data manipulation and analysis, and will make for a simple process preprocessing the data.  The raw data set must be prepared before a model can be developed from it.  Before preprocessing the data:
+
 * shape: (119390, 32)
 * duplicate entries: 31,994 
  
@@ -90,6 +91,7 @@ The features of the data set, the categories other than what is being predicted,
 * reservation_status_date: intermediate status of reservation is irrelevant 
 
 In addition, duplicates are removed.  In the case of the features 'reserved_room_type' and 'assigned_room_type' what is of interest is if the guest was given the requested room type.  As the room code system has been anonymized and is proprietary to the brand, it is impossible to make inferences other than this.  To simplify the number of features, a Boolean comparison is performed on 'reserved_room_type' and 'assigned_room_type'.  'reserved_room_type' and 'assigned_room_type' are deleted while the Boolean results are converted to integer values then placed in a new feature category, 'room_correct'.  As it stands, multiple data entries across various features are strings.  In order to build a predictive model, the data entries are converted to integers.
+
 ```python
 #Convert to numerical values
 df = df.replace(['City Hotel', 'HB', 'Online TA', 'TA/TO', 'No Deposit',
@@ -114,6 +116,7 @@ After preprocessing the data:
 * duplicate entries:  0
 
 ![Data Snapshot](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure1.png)
+
 **Figure 1:** Snapshot of Data Set after Preprocessing 
 
 ## 5. Model Creation
@@ -134,16 +137,19 @@ The train/test ratio of 60/40 had the best initial accuracy of 79.56% so this ra
 This model relies on 23 features for the prediction.  With this many features it is possible that some features have no effect on the cancellation outcome. It is also possible that some features are so closely related that calculating each individually hinders performance while having little effect on outcome.  To evaluate the importance of features, Pearson's correlation coefficent can be used.  Correlation coefficients are used in statistics to measure how strong the relationship is between two variables.  The calculation formula returns a value between -1 and 1 where a value of 1 indicates a strong positive relationship, -1 indicates a strong negative relationship, and 0 indicates that there is no relationship at all [^9].  Figure 2 shows the correlation between the remaining features.
 
 ![Initial Model Correlation](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure2.png)
+
 **Figure 2:** Pearson's Correlation Graph of Remaining Features
 
 In Figure 2 it is straightforward to identify the correlation between the target variable 'is_canceled' and the remaining features.  It does not appear than any variable has a strong positive or negative correlation, returning a value close to positive or negative 1.  There does however appear to be a dominant correlation between 'is_canceled' and three features: 'lead_time', 'adr', and 'room_correct'.  The train/test ratio is again 60/40 and the baseline accuracy of the model is 79.56%.  The remaining features 'lead_time', 'adr', and 'room_correct' are used to develop the new model.  Accuracy is again determined by comparing the number of predicted cancellations to the number of actual cancellations.  The updated model has an accuracy of 85.18%.  Figure 3 shows the correlation between the remaining features.  It is important to note that the relationship between the remaining features and target value does not appear to be strong, however there is a correlation nonetheless.
 
 ![Updated Model Correlation](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure3.png)
+
 **Figure 3:** Pearson's Correlation Graph of Updated Remaining Features
 
 As a final visualization, Figure 4 shows a comparison between the predicted and actual cancellation instances.  The graph reveals an interesting pattern, the model is over predicting early in the data set and under predicting as it proceeds through the data set. Further inspection and manipulation of the Random Forest parameters were unable to eliminate this pattern.
 
 ![Results Predicted vs. Actual](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure4.png)
+
 **Figure 4:** Model Results Predicted vs. Actual
 
 ## 6. Benchmark
@@ -151,6 +157,7 @@ As a final visualization, Figure 4 shows a comparison between the predicted and 
 A benchmark was ran within the Google Colab notebook to measure performance.  In this instance, performance was measured during the training of the first and second models.  With 23 features, the first model took 8.218 seconds to train.  With 3 features the second model took 6.954 seconds to train.  There was a 5.62% increase in accuracy and a 15.38% decrease in processing time.  Figure 5 provides more insight into the parameters the benchmark tracked and returned.
 
 ![Benchmark Results](https://github.com/cybertraining-dsc/fa20-523-323/raw/main/project/images/figure5.png)
+
 **Figure 5:** Cloudmesh Benchmark Results
 
 ## 7. Conclusion
