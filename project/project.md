@@ -3,7 +3,7 @@
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions) 
 [![Status](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions)
-Status: final
+Status: final, Type: Project
 
 Anthony Tugman, [fa20-523-323](https://github.com/cybertraining-dsc/fa20-523-323/), [Edit](https://github.com/cybertraining-dsc/fa20-523-323/blob/main/project/project.md)
 
