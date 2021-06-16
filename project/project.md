@@ -1,4 +1,14 @@
-# Predicting Hotel Reservation Cancellation Rates
+---
+date: 2021-03-15
+title:  Predicting Hotel Reservation Cancellation Rates
+linkTitle: Hotel reservations
+tags: ["project", "ai", "finance"]
+description: Predicting Hotel Reservation Cancellation Rates
+author: Anthony Tugman
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+---
 
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-323/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-323/actions) 
